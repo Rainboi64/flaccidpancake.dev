@@ -69,53 +69,56 @@ function App() {
         })}
 
         <ParallaxLayer offset={1} speed={2}>
-          <div>
+          <div style={{ margin: 32 }}>
             is an aspiring team of
             <h3>talented game developers</h3> set to create games that will live
             rent free in your head for as long as you'll live
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1.35} speed={0.99}>
-          <h3>
+        <ParallaxLayer offset={1.999} speed={1.99999}>
+          <h3 style={{ margin: 32 }}>
             Flaccid Pancake's development team currently consists of three
             talented game developers set out to make a name for themselves in
             the industry
           </h3>
+          <div>
+            <h1>Yaman Alhalabi</h1>
+            <p>yalhalabi@flaccidpancake.dev</p>
+            <p style={{ margin: 32 }}>
+              A man so good at coding you would think he was born with a
+              keyboard in hand, oh sh** he was. anyways he's natural-born
+              overachiever and a great leader.
+            </p>
+          </div>
+
+          <div>
+            <h1>Majd Kiddeh</h1>
+            <p>mgdkdh@flaccidpancake.dev</p>
+            <p style={{ margin: 32 }}>
+              the main writer, director and head of advertising.
+            </p>
+          </div>
+
+          <div>
+            <h1>Mohammad Kuziz</h1>
+            <p>mkzez@flaccidpancake.dev</p>
+            <p style={{ margin: 32 }}>
+              3d artist, social media manager and head of art direction. Despite
+              having a common name this man is a one in a billion, able to
+              handle any given task with immense care and dedication.
+            </p>
+          </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1.5} speed={1}>
-          <h1>Yaman Alhalabi</h1>
-          <p>yalhalabi@flaccidpancake.dev</p>
-          <p>
-            A man so good at coding you would think he was born with a keyboard
-            in hand, oh sh** he was. anyways he's natural-born overachiever and
-            a great leader.
-          </p>
-        </ParallaxLayer>
-        <ParallaxLayer offset={1.75} speed={1.2}>
-          <h1>Majd Kiddeh</h1>
-          <p>mgdkdh@flaccidpancake.dev</p>
-          <p>the main writer, director and head of advertising.</p>
-        </ParallaxLayer>
-        <ParallaxLayer offset={1.99} speed={1.3}>
-          <h1>Mohammad Kuziz</h1>
-          <p>mkzez@flaccidpancake.dev</p>
-          <p>
-            3d artist, social media manager and head of art direction. Despite
-            having a common name this man is a one in a billion, able to handle
-            any given task with immense care and dedication.
-          </p>
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={0.9} speed={0.5}>
+        <ParallaxLayer offset={2} speed={0.5}>
           <p>
             The FlaccidPancake team is currently working on its next project, we
             can't wait to show you what we are cooking!
           </p>
         </ParallaxLayer>
         <ParallaxLayer offset={1.99999} speed={1}></ParallaxLayer>
-      <p>subreddit: r/flaccidpancake</p>
+        <p>subreddit: r/flaccidpancake</p>
       </Parallax>
     </div>
   );
