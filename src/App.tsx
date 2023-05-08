@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./App.css";
 import "animate.css";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import { endianness } from "os";
 
 const Colors = ["#ffbe0b", "#fb5607", "#ff006e", "#8338ec", "#3a86ff"];
 
@@ -42,7 +41,7 @@ function Circle(props: { offset: number }) {
 function App() {
   return (
     <div className="App">
-      <Parallax pages={2.3} style={{ top: "0", left: "0" }}>
+      <Parallax pages={4} style={{ top: "0", left: "0" }}>
         <ParallaxLayer offset={0} speed={1.5}>
           <header className="App-header">
             <img
@@ -54,12 +53,8 @@ function App() {
           </header>
         </ParallaxLayer>
 
-        <ParallaxLayer
-          offset={0.75}
-          speed={1}
-          sticky={{ start: 0.75, end: 1.5 }}
-        >
-          <div style={{ margin: 5 }} className="sticky">
+        <ParallaxLayer offset={0.75} speed={0.5}>
+          <div style={{ margin: 32 }} className="sticky">
             <h3>Flaccid Pancake</h3>
           </div>
         </ParallaxLayer>
@@ -68,15 +63,15 @@ function App() {
           return <Circle offset={0.5} />;
         })}
 
-        <ParallaxLayer offset={1} speed={2}>
+        <ParallaxLayer offset={1} speed={1}>
           <div style={{ margin: 32 }}>
-            is an aspiring team of
+            we are an aspiring team of
             <h3>talented game developers</h3> set to create games that will live
             rent free in your head for as long as you'll live
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1.999} speed={1.99999}>
+        <ParallaxLayer offset={2} speed={0.5}>
           <h3 style={{ margin: 32 }}>
             Flaccid Pancake's development team currently consists of three
             talented game developers set out to make a name for themselves in
@@ -111,13 +106,13 @@ function App() {
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={2} speed={0.5}>
-          <p>
-            The FlaccidPancake team is currently working on its next project, we
-            can't wait to show you what we are cooking!
+        <ParallaxLayer offset={3} speed={0.55}>
+          <p style={{ margin: 32 }}>
+            The Flaccid Pancake team is currently working on its next project,
+            we can't wait to show you what we are cooking!
           </p>
         </ParallaxLayer>
-        <ParallaxLayer offset={1.99999} speed={1}></ParallaxLayer>
+        <ParallaxLayer offset={1.99999} speed={0.5}></ParallaxLayer>
         <p>subreddit: r/flaccidpancake</p>
       </Parallax>
     </div>
